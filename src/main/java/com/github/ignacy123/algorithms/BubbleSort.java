@@ -1,5 +1,7 @@
 package com.github.ignacy123.algorithms;
 
+import static com.github.ignacy123.algorithms.ArrayUtils.swap;
+
 /**
  * Created by ignacy on 11.10.16.
  */
@@ -24,14 +26,6 @@ public class BubbleSort {
                 }
             }
         }
-        return array;
-    }
-
-    public static int[] swap (int[] array, int indexOne, int indexTwo){
-        int a = array[indexOne];
-        int b = array[indexTwo];
-        array[indexOne] = b;
-        array[indexTwo] = a;
         return array;
     }
 }

@@ -16,9 +16,7 @@ public class SelectionSort {
 				if (arr[j] < arr[minIndex])
 					minIndex = j;
 			if (minIndex != i) {
-				tmp = arr[i];
-				arr[i] = arr[minIndex];
-				arr[minIndex] = tmp;
+				ArrayUtils.swap(arr, i, minIndex);
 			}
 		}
 	}
